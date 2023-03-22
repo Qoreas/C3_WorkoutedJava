@@ -1,18 +1,19 @@
-package P0_Comparible;
+package P1_Comparable_Comparator.Comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class T2_comparable {
+public class T1_comparator {
     public static void main(String[] args) {
         List<Employee> list = new ArrayList<>();
-        list.add(new Employee(100, "Zaur", "Trigulov", 12000));
+        list.add(new Employee(100, "Zaur", "Trigulov", 54400));
         list.add(new Employee(21, "Ivan", "Petrov", 33221));
-        list.add(new Employee(231, "Ivan", "Sidorov", 54400));
+        list.add(new Employee(231, "Ivan", "Sidorov", 12000));
 
         System.out.println("Before sort - " + list);
-        Collections.sort(list);
+        Collections.sort(list, new SalaryComparator());
         System.out.println("After sort - " + list);
 
     }
@@ -43,20 +44,27 @@ class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee o) {
-//        if (this.id == o.id) {
-//            return 0;
-//        } else if (this.id < o.id) {
-//            return -1;
-//        } else return 1;
+        return this.id - o.id;
+    }
+}
 
-//        return this.id - o.id;
-//        return Integer.compare(this.id, o.id);
+class IdComparator implements Comparator<Employee> {
+    @Override
+    public int compare(Employee o1, Employee o2) {
+        return Integer.compare(o1.id, o2.id);
+    }
+}
 
-        int res = this.name.compareTo(o.name);
+class NameComparator implements Comparator<Employee> {
+    @Override
+    public int compare(Employee o1, Employee o2) {
+        return o1.name.compareTo(o2.name);
+    }
+}
 
-        if (res == 0) {
-            res = this.surname.compareTo(o.name);
-        }
-        return res;
+class SalaryComparator implements Comparator<Employee> {
+    @Override
+    public int compare(Employee o1, Employee o2) {
+        return o1.salary - o2.salary;
     }
 }
