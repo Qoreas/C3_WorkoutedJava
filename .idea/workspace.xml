@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63d95bd7-04d0-4b20-a448-a9f97ad9b4e5" name="Changes" comment="generics 2.2">
-      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L2_Parameterized_method/T1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L3_Type_erasure/T1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L4_subTyping/T1.java" afterDir="false" />
+    <list default="true" id="63d95bd7-04d0-4b20-a448-a9f97ad9b4e5" name="Changes" comment="generics 2.4">
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L5_wildCards/T1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L6_Examples/V1/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L6_Examples/V1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L6_Examples/V1/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L6_Examples/V1/Schooler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L6_Examples/V1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/P2_Generics/L6_Examples/V1/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,20 +51,7 @@
       <recent name="C:\Users\Qoreas\IdeaProjects\C3_Zaur\src\P11_20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T1">
-    <configuration name="P1_Comparable_Comparator.Comparator.T1_comparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="P1_Comparable_Comparator.Comparator.T1_comparator" />
-      <module name="C3_Zaur" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="P1_Comparable_Comparator.Comparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.P2_Generics.L5_wildCards.T1">
     <configuration name="P2_Generics.L1_start.T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="P2_Generics.L1_start.T1" />
       <module name="C3_Zaur" />
@@ -100,6 +91,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="P2_Generics.L5_wildCards.T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P2_Generics.L5_wildCards.T1" />
+      <module name="C3_Zaur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="P2_Generics.L5_wildCards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="P2_Generics.L2_Parameterized_method.T1" />
       <module name="C3_Zaur" />
@@ -115,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P2_Generics.L5_wildCards.T1" />
         <item itemvalue="Application.T1" />
         <item itemvalue="Application.P2_Generics.L2_Parameterized_class.T2" />
         <item itemvalue="Application.P2_Generics.L2_Parameterized_class.T1" />
         <item itemvalue="Application.P2_Generics.L1_start.T1" />
-        <item itemvalue="Application.P1_Comparable_Comparator.Comparator.T1_comparator" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +145,11 @@
       <workItem from="1681044208216" duration="1386000" />
       <workItem from="1681046115680" duration="98000" />
       <workItem from="1681046298466" duration="918000" />
+      <workItem from="1681047579420" duration="361000" />
+      <workItem from="1681049041113" duration="1747000" />
+      <workItem from="1681051509240" duration="725000" />
+      <workItem from="1681052249865" duration="846000" />
+      <workItem from="1681053131320" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="lesson 1">
       <created>1679483870802</created>
@@ -163,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680626694730</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="generics 2.4">
+      <created>1681047934481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681047934481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +209,7 @@
     <MESSAGE value="lesson 1" />
     <MESSAGE value="fix" />
     <MESSAGE value="generics 2.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="generics 2.2" />
+    <MESSAGE value="generics 2.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="generics 2.4" />
   </component>
 </project>
